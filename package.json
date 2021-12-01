@@ -1,0 +1,40 @@
+{
+    "name": "vscode-copy-dot-path",
+    "displayName": "vscode_copy_dot_path",
+	"repository": "https: //github.com/cscanlin/vscode-copy-dot-path",
+    "description": "",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:vscode-copy-dot-path.copy_dot_path"
+    ],
+    "publisher": "cscanlin",
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "vscode-copy-dot-path.copy_dot_path",
+                "title": "Copy Dot Path"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "vscode-copy-dot-path.copy_dot_path",
+                    "group": "6_copypath@100"
+                }
+            ],
+            "editor/title/context": [
+                {
+                    "command": "vscode-copy-dot-path.copy_dot_path",
+                    "group": "1_cutcopypaste@100"
+                }
+            ]
+        }
+    }
+}
